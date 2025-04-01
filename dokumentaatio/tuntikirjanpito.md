@@ -2,8 +2,8 @@
 
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
-| 25.3. | 1,5    | sovelluksen suunnittelu, dokumentaatio |
-|  |     |  |
+| 25.03. | 1,5    | sovelluksen suunnittelu, dokumentaatio |
+|01.04.  |  10   | materiaalin lukeminen, sovelluksen peruslogiikan rakennus, ekat testit, changelog, README:n päivitys |
 |  |     |  |
 |       |     |  |
 |       |     |  |
@@ -13,4 +13,4 @@
 |   |     | |
 |       |     | |
 |   |     |  |
-| yht   | 1,5  | | 
+| yht   | 11,5  | | 
