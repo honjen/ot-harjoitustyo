@@ -49,7 +49,7 @@ poetry run invoke test
 
 ## Testikattavuus
 
-Generoi testikattavuusraportti _htmlcov_-hakemistoon.:
+Generoi testikattavuusraportti htmlcov-hakemistoon:
 
 ```
 poetry run invoke coverage-report
