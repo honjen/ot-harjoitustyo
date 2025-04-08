@@ -4,10 +4,7 @@ Sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa pelaajat p
 
 Pelistä puuttuvat vielä lähiaikoina lisättävät ominaisuudet kuten:
 - erikoiskortit
-- mahdollisuus voittaa/hävitä ja pelata uusi peli
-- pakan uudelleen sekoitus
-- tekoälyn toimintoihin lisättävä viive
-- pelaajan korttien laitto järjestykseen
+- pisteet, high score ranking
 - grafiikat
 
 Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää jatkokehitysideoita. 
@@ -15,6 +12,8 @@ Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää ja
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
+
+[Arkkitehtuurikuvaus](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/arkkitehtuuri.md)
 
 [Changelog](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/changelog.md)
 
@@ -55,6 +54,10 @@ Generoi testikattavuusraportti htmlcov-hakemistoon:
 poetry run invoke coverage-report
 ```
 
+## Pylint
 
+Suorita Pylint-tarkistus:
 
-
+```
+poetry run invoke lint
+```
