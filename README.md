@@ -3,7 +3,7 @@
 Sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa pelaajat pyrkivät pääsemään eroon korteistaan noudattaen pelin sääntöjä. Kortteja voi pelata, jos ne vastaavat värin tai numeron (0-9) perusteella pöydällä olevaa korttia. Pelissä tulee olemaan myös erikoiskortteja, jotka voivat vaikuttaa pelin kulkuun. Sovellus tarjoaa yksinpelin tekoälyvastustajaa vastaan.
 
 Pelistä puuttuvat vielä lähiaikoina lisättävät ominaisuudet kuten:
-- erikoiskortit
+- erikoiskortit: villi kortti, villi nosta 4 kortti
 - pisteet, high score ranking
 - grafiikat
 
@@ -36,7 +36,7 @@ poetry run invoke start
 
 ## Pelaaminen
 
-Valitse pelattava kortti (numero tai väri on sama kuin poistopakan ylin kortti) painamalla jotain kirjainta (a-z). Jos sinulla ei ole pelattavaa korttia niin paina enter ja saat kortin lisää. Tässä pelin versiossa on vain perustoiminnallisuus ja siitä puuttuu erikoiskortit, joten voit vaan pelataan kortteja vuorotellen tietokonetta vastaan, mutta peliä ei voi vielä voittaa/hävitä ja se loppuu viimeistään kun pakan kortit loppuvat. Voit sulkea sovelluksen milloin tahansa painamalla yläkulman ruksia.
+Valitse pelattava kortti (numero tai väri on sama kuin poistopakan ylin kortti) painamalla jotain kirjaimen (a-z) nappia. Jos sinulla ei ole pelattavaa korttia niin paina enter ja saat kortin lisää. Peliin on lisätty värillisiä erikoiskortteja, kuten ohitus ja suunnanvaihto, joita pelaamalla pelaaja saa toisen vuoron. Pelaamalla värillinen nosta 2 kortti pelaaja laittaa vastustajan nostamaan 2 korttia ja menettämään vuoronsa. Pelistä puuttuvat vielä erikoiskortit, kuten villi kortti ja villi nosta 4 kortti. Kun pelaaja tai tietokone pääsee eroon korteistaan peli loppuu (voitto/häviö) ja voit valita haluatko pelata uuden pelin. Voit sulkea sovelluksen milloin tahansa painamalla yläkulman ruksia.
 
 ## Testaus
 
