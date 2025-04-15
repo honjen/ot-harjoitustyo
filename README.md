@@ -9,7 +9,7 @@ Pelistä puuttuvat vielä lähiaikoina lisättävät ominaisuudet kuten:
 
 Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää jatkokehitysideoita. 
 
-## Linkki uusimpaan releasiin
+## Uusin release
 [Viikko 5 release](https://github.com/honjen/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Dokumentaatio
