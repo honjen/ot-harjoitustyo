@@ -1,8 +1,9 @@
 import sys
 import pygame
 
+
 class GameRenderer:
-    def __init__(self, width=1025, height=800, restart_callback=None):
+    def __init__(self, width=1400, height=900, restart_callback=None):
         pygame.init()
         self.screen = pygame.display.set_mode((width, height))
         pygame.display.set_caption("Korttipeli")
@@ -27,10 +28,11 @@ class GameRenderer:
         self._draw_text(card_text, 50, 130, card_color)
         player_text = f"Pelaaja: {len(game.player.hand)} korttia{game.player.last_action}"
         self._draw_text(player_text, 50, 190)
+
         self._draw_text("Pelaajan kortit:", 50, 250)
         for i, card in enumerate(game.player.hand):
             card_label = f"[{chr(97 + i)}] {card[0]} {card[1]}"
-            x_pos = 50 + (i % 4) * 260
+            x_pos = 50 + (i % 4) * 330
             y_pos = 280 + (i // 4) * 50
             color = self.colors.get(card[0], (0, 0, 0))
             self._draw_text(card_label, x_pos, y_pos, color)

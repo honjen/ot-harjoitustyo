@@ -30,12 +30,21 @@ class Game:
                 index, self.current_card, self.is_valid_play)
             if card:
                 self.current_card = card
-                self.player.last_action = f", viimeksi pelasi kortin {card[0]} {card[1]}"
+                self.player.last_action = f", viimeksi pelasi {card[0]} {card[1]}"
                 self.deck.discard_pile.append(self.current_card)
                 if self.check_game_over():
                     return
-                self.turn = "Tietokone"
-                self.ai_turn()
+                # special card check
+                if card[1] in ["ohita", "suunnanvaihto"]:
+                    self.player.last_action += ", sai toisen vuoron"
+                elif card[1] == "nosta 2":
+                    self.ai.draw_card(self.deck)
+                    self.ai.draw_card(self.deck)
+                    self.player.last_action += ", sai toisen vuoron"
+                    self.ai.last_action = ", viimeksi nosti 2 korttia"
+                else:
+                    self.turn = "Tietokone"
+                    self.ai_turn()
         elif event.key == pygame.K_RETURN:
             self.player.draw_card(self.deck)
             self.turn = "Tietokone"
@@ -46,11 +55,20 @@ class Game:
             if self.is_valid_play(card, self.current_card):
                 self.deck.discard_pile.append(self.current_card)
                 self.current_card = self.ai.hand.pop(i)
-                self.ai.last_action = f", viimeksi pelasi kortin {card[0]} {card[1]}"
+                self.ai.last_action = f", viimeksi pelasi {card[0]} {card[1]}"
                 if self.check_game_over():
                     return
-                self.turn = "Pelaaja"
-                return
+                 # special card check
+                if card[1] in ["ohita", "suunnanvaihto"]:
+                    self.ai.last_action += ", sai toisen vuoron"
+                elif card[1] == "nosta 2":
+                    self.player.draw_card(self.deck)
+                    self.player.draw_card(self.deck)
+                    self.ai.last_action += ", sai toisen vuoron"
+                    self.player.last_action = ", viimeksi nosti 2 korttia"
+                else:
+                    self.turn = "Pelaaja"
+                    return
         self.ai.draw_card(self.deck)
         self.turn = "Pelaaja"
 
