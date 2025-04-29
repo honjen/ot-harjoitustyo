@@ -40,7 +40,7 @@ poetry run invoke start
 
 ## Pelaaminen
 
-Valitse pelattava kortti (numero tai väri on sama kuin poistopakan ylin kortti) painamalla jotain kirjaimen (a-z) nappia. Jos sinulla ei ole pelattavaa korttia niin paina enter ja saat kortin lisää. Peliin on lisätty värillisiä erikoiskortteja, kuten ohitus ja suunnanvaihto, joita pelaamalla pelaaja saa toisen vuoron. Pelaamalla värillinen nosta 2 kortti pelaaja laittaa vastustajan nostamaan 2 korttia ja menettämään vuoronsa. Pelistä puuttuvat vielä erikoiskortit, kuten villi kortti ja villi nosta 4 kortti. Kun pelaaja tai tietokone pääsee eroon korteistaan peli loppuu (voitto/häviö) ja voit valita haluatko pelata uuden pelin. Voit sulkea sovelluksen milloin tahansa painamalla yläkulman ruksia.
+Valitse pelattava kortti (numero tai väri on sama kuin poistopakan ylin kortti) painamalla jotain kirjaimen (a-z) nappia. Jos sinulla ei ole pelattavaa korttia niin paina enter ja saat kortin lisää. Peliin on lisätty värillisiä erikoiskortteja, kuten ohitus ja suunnanvaihto, joita pelaamalla pelaaja saa toisen vuoron. Pelaamalla värillinen nosta 2 kortti pelaaja laittaa vastustajan nostamaan 2 korttia ja menettämään vuoronsa. Kun pelaaja tai tietokone pääsee eroon korteistaan peli loppuu (voitto/häviö) ja voit valita haluatko pelata uuden pelin. Voit sulkea sovelluksen milloin tahansa painamalla yläkulman ruksia.
 
 ## Testaus
 
