@@ -3,7 +3,17 @@ import pygame
 
 
 class GameRenderer:
+    """Handles the rendering of the game on the screen."""
+
     def __init__(self, width=1400, height=900, restart_callback=None):
+        """
+        Initializes the game renderer with screen dimensions and an optional restart callback.
+
+        Args:
+            width: The width of the game window.
+            height: The height of the game window.
+            restart_callback: A function to call when the game is restarted.
+        """
         pygame.init()
         self.screen = pygame.display.set_mode((width, height))
         pygame.display.set_caption("Korttipeli")
@@ -17,6 +27,12 @@ class GameRenderer:
         self.restart_callback = restart_callback
 
     def draw(self, game):
+        """
+        Draws the current state of the game on the screen.
+
+        Args:
+            game: The game object containing the current state.
+        """
         self.screen.fill((255, 255, 255))
         self._draw_text(f"Vuoro: {game.turn}", 50, 20)
         ai_text = f"Tietokone: {len(game.ai.hand)} korttia{game.ai.last_action}"
@@ -40,7 +56,23 @@ class GameRenderer:
         pygame.display.flip()
 
     def _draw_text(self, text, x, y, color=(0, 0, 0)):
+        """
+        Draws text on the screen.
+
+        Args:
+            text: The text to draw.
+            x: The x-coordinate for the text.
+            y: The y-coordinate for the text.
+            color: The color of the text (default is black).
+        """
         self.screen.blit(self.font.render(text, True, color), (x, y))
+
+    def draw_color_choice(self):
+        """Draws the color choice prompt on the screen."""
+        self.screen.fill((255, 255, 255))
+        self._draw_text(
+            "Valitse väri: [R] punainen, [G] vihreä, [B] sininen, [Y] keltainen", 50, 300)
+        pygame.display.flip()
 
     def draw_end_screen(self, message):
         self.screen.fill((255, 255, 255))

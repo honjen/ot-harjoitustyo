@@ -27,3 +27,17 @@
 - Testattu, että peli päättyy, kun pelaajalla ei ole enää kortteja (pelaaja voittaa) tai tietokoneella ei ole enää kortteja (pelaaja häviää)
 - Testattu, että peli ei pääty, jos kummallakin pelaajalla on vielä kortteja
 - Testattu, että is_valid_play palauttaa True, jos pelattavan kortin väri tai arvo vastaa pelissä olevaa korttia ja se palauttaa False, jos väri ja arvo eivät täsmää pelissä olevaan korttiin
+
+## Viikko 6
+
+- Käyttäjä voi pelata villi-kortin ja valita seuraavaksi pelattavan kortin värin
+- Käyttäjä voi pelata villi nosta 4-kortin ja valita seuraavaksi pelattavan värin ja laittaa vastustajan nostamaan 4 korttia sekä menettämään vuoronsa
+- Käyttäjä voi pelata kortteja alusta asti koska on varmistettu, että uudet värittömät villit kortit eivät tule poistopakan ensimmäiseksi kortiksi
+- Yllämainittu villi-kortti toimii myös käyttäjään
+- Yllämainittu villi nosta 4 kortti toimii myös käyttäjään mutta tässä versiossa tietokone ei saa uutta vuoroa (korjataan pian)
+- Käyttäjä voi nostaa kaikki kortit pakasta ja silloin peli loppuu tasapeliin
+- Käyttäjä voi seurata peliä paremmin nyt kun tietokoneen toimintaan on lisätty pieni viive
+- Korjattu virhe koodissa liittyen pelin sulkemiseen
+- Testattu, että villiä korttia ei voi nostaa aloituskortiksi
+- Testattu, että jos ei ole kortteja mitä nostaa palautuu None
+- Testattu, että osa erikoiskorteista toimii

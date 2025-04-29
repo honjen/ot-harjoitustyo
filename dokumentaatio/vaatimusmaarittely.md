@@ -32,15 +32,17 @@ Sovellus on digitaalinen versio korttipelistä, jossa pelaajat pyrkivät pääse
 - [x] Peli päättyy, kun jompikumpi pelaaja pääsee eroon kaikista korteistaan (voitto/häviö)
 - [x] Pelaaja voi lopettaa tai aloittaa uuden pelin pelin loppumisen jälkeen
 - [x] Pelaaja voi pelata värillisiä ohitus- ja suunnanvaihtokortteja saadakseen toisen vuoron
-- [x] Pelaaja voi pelata värillisiä nosta 2 kortteja saadakseen vastustajan nostamaan kaksi korttia ja menettämään vuoronsa 
+- [x] Pelaaja voi pelata värillisiä nosta 2 kortteja saadakseen vastustajan nostamaan kaksi korttia ja menettämään vuoronsa
+- [x] Pelaaja voi pelata villi-kortin ja valita seuraavaksi pelattavan kortin värin
+- [x] Pelaaja voi pelata villi nosta 4-kortin ja valita seuraavaksi pelattavan kortin värin sekä saada vastustajansa nostamaan 4 korttia ja menettämään vuoronsa
+- [x] Peli päättyy, jos kaikki kortit nostetaan pakasta (tasapeli)
 
 ## Seuraavaksi lisättävät toiminnallisuudet
-- [ ] Erikoiskortit: villi kortti, villi nosta 4
 - [ ] Grafiikat korteille
 - [ ] Pisteiden lasku, high score ranking
 
 ## Tunnetut ongelmat, korjaus tulee pian
-- Jos pelaaja nostaa kortteja niin paljon kuin pystyy ja nostopakasta loppuvat kortit niin peli kaatuu (normaalisti pelatessa ei pitäisi olla ongelma)
+- Kun tietokone pelaa villi nosta 4-kortin se ei saa uutta vuoroa, mutta se ei vaikuta muuten pelaamiseen
 
 ## Jatkokehitysideoita
 

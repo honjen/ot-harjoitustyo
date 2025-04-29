@@ -8,9 +8,9 @@
 | 08.04. |  4   | lisää testejä, arkkitehtuurikuvaus, määrittelydokumentin ja README:n päivitys, changelog, tuntikirjanpito... |
 | 14.04. |  9   | lisää sovelluksen peruslogiikan rakennusta siis erikoiskortit: ohitus, suunnanvaihto, nosta 2 |
 | 15.04. |  7   | lisää testejä, pylint, sekvenssikaavio, määrittelydokumentin ja README:n päivitys, changelog, tuntikirjanpito, releasen teko... |
+| 28.04  |  4   | lisää sovelluksen peruslogiikan rakennusta siis erikoiskortit: villi kortti, villi nosta 4 kortti |
+| 29.04  |  10  | docstring, lisää testejä, arkkitehtuurikuvaus, käyttöohje, määrittelydokumentin ja README:n päivitys, changelog, tuntikirjanpito, releasen teko... |
 |        |      |     |
 |        |      |     |
 |        |      |     |
-|        |      |     |
-|        |      |     |
-| yht    | 38,5 |     | 
+| yht    | 52,5 |     | 

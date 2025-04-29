@@ -1,18 +1,19 @@
 # Ohjelmistotekniikka, harjoitustyö: korttipeli
 
-Sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa pelaajat pyrkivät pääsemään eroon korteistaan noudattaen pelin sääntöjä. Kortteja voi pelata, jos ne vastaavat värin tai numeron (0-9) perusteella pöydällä olevaa korttia. Pelissä tulee olemaan myös erikoiskortteja, jotka voivat vaikuttaa pelin kulkuun. Sovellus tarjoaa yksinpelin tekoälyvastustajaa vastaan.
+Sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa pelaajat pyrkivät pääsemään eroon korteistaan noudattaen pelin sääntöjä. Kortteja voi pelata, jos ne vastaavat värin tai numeron (0-9) perusteella pöydällä olevaa korttia. Pelissä on myös erikoiskortteja, jotka voivat vaikuttaa pelin kulkuun. Sovellus tarjoaa yksinpelin tekoälyvastustajaa vastaan.
 
 Pelistä puuttuvat vielä lähiaikoina lisättävät ominaisuudet kuten:
-- erikoiskortit: villi kortti, villi nosta 4 kortti
 - pisteet, high score ranking
 - grafiikat
 
 Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää jatkokehitysideoita. 
 
 ## Uusin release
-[Viikko 5 release](https://github.com/honjen/ot-harjoitustyo/releases/tag/viikko5)
+[Viikko 6 release](https://github.com/honjen/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Dokumentaatio
+
+[Käyttöohje](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/kayttoohje.md)
 
 [Vaatimusmäärittely](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
 

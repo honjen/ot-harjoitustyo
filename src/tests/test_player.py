@@ -19,6 +19,11 @@ class TestPlayer(unittest.TestCase):
         self.player.draw_card(self.deck)
         self.assertEqual(len(self.player.hand), len_player + 1)
 
+    def test_draw_card_with_an_empty_deck(self):
+        for _ in range(120):
+            self.deck.draw_card()
+        self.assertFalse(self.player.draw_card(self.deck))
+        
     # check playing a valid card works
     def test_play_card_valid_with_same_color(self):
         self.player.hand = [("punainen", "6")]

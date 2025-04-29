@@ -9,6 +9,7 @@ class FakeRenderer:
     def draw_end_screen(self, message):
         self.message = message
 
+
 class TestGame(unittest.TestCase):
     def setUp(self):
         self.renderer = FakeRenderer()
@@ -47,10 +48,27 @@ class TestGame(unittest.TestCase):
         result = self.game.check_game_over()
         self.assertTrue(result)
         self.assertEqual(self.renderer.message, "Hävisit pelin :(")
-    
+
     # check no game over while both have cards
     def test_check_game_over_continues(self):
         self.game.player.hand = [("punainen", "1")]
         self.game.ai.hand = [("vihreä", "2")]
         result = self.game.check_game_over()
         self.assertFalse(result)
+
+    def test_player_special_card_check_nosta2(self):
+        card = ("punainen", "nosta 2")
+        self.game.player_special_card_check(card)
+        self.assertEqual(self.game.ai.last_action, ", viimeksi nosti 2 korttia")
+
+    def test_player_special_card_check_ohita(self):
+        card = ("punainen", "ohita")
+        self.game.player_special_card_check(card)
+        self.assertEqual(self.game.player.last_action, ", sai toisen vuoron")
+    
+    def test_player_special_card_check_suunnanvaihto(self):
+        card = ("punainen", "suunnanvaihto")
+        self.game.player_special_card_check(card)
+        self.assertEqual(self.game.player.last_action, ", sai toisen vuoron")
+
+    
