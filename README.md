@@ -30,7 +30,7 @@ Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää ja
 poetry install
 ```
 
-2. Käynnistä ohjelma:
+2. Alusta database:
 
 ```
 poetry run invoke build
