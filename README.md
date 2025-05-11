@@ -5,7 +5,7 @@ Korttipeli-sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa
 Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää jatkokehitysideoita. 
 
 ## Uusin release
-[Viikko 7 release](https://github.com/honjen/ot-harjoitustyo/releases/tag/viikko7)
+[Viikko 7 release](https://github.com/honjen/ot-harjoitustyo/releases/tag/loppupalautus)
 
 ## Dokumentaatio
 
