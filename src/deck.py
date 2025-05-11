@@ -1,5 +1,6 @@
 import random
 
+
 class CardDeck:
     """Represents a deck of cards."""
 

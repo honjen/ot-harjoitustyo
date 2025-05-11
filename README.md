@@ -1,15 +1,11 @@
-# Ohjelmistotekniikka, harjoitustyö: korttipeli
+# Korttipeli
 
-Sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa pelaajat pyrkivät pääsemään eroon korteistaan noudattaen pelin sääntöjä. Kortteja voi pelata, jos ne vastaavat värin tai numeron (0-9) perusteella pöydällä olevaa korttia. Pelissä on myös erikoiskortteja, jotka voivat vaikuttaa pelin kulkuun. Sovellus tarjoaa yksinpelin tekoälyvastustajaa vastaan.
-
-Pelistä puuttuvat vielä lähiaikoina lisättävät ominaisuudet kuten:
-- pisteet, high score ranking
-- grafiikat
+Korttipeli-sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa pelaajat pyrkivät pääsemään eroon korteistaan noudattaen pelin sääntöjä. Kortteja voi pelata, jos ne vastaavat värin tai numeron (0-9) perusteella pöydällä olevaa korttia. Pelissä on myös erikoiskortteja, jotka voivat vaikuttaa pelin kulkuun. Sovellus tarjoaa yksinpelin tekoälyvastustajaa vastaan.
 
 Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää jatkokehitysideoita. 
 
 ## Uusin release
-[Viikko 6 release](https://github.com/honjen/ot-harjoitustyo/releases/tag/viikko6)
+[Viikko 7 release](https://github.com/honjen/ot-harjoitustyo/releases/tag/viikko7)
 
 ## Dokumentaatio
 
@@ -20,6 +16,8 @@ Vaatimusmäärittelystä löytyy tarkemmin tietoa sovelluksesta sekä lisää ja
 [Arkkitehtuurikuvaus](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/arkkitehtuuri.md)
 
 [Changelog](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/changelog.md)
+
+[Testausdokumentti](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/testaus.md)
 
 [Työaikakirjanpito](https://github.com/honjen/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
 
@@ -35,12 +33,18 @@ poetry install
 2. Käynnistä ohjelma:
 
 ```
+poetry run invoke build
+```
+
+3. Käynnistä ohjelma:
+
+```
 poetry run invoke start
 ```
 
 ## Pelaaminen
 
-Valitse pelattava kortti (numero tai väri on sama kuin poistopakan ylin kortti) painamalla jotain kirjaimen (a-z) nappia. Jos sinulla ei ole pelattavaa korttia niin paina enter ja saat kortin lisää. Peliin on lisätty värillisiä erikoiskortteja, kuten ohitus ja suunnanvaihto, joita pelaamalla pelaaja saa toisen vuoron. Pelaamalla värillinen nosta 2 kortti pelaaja laittaa vastustajan nostamaan 2 korttia ja menettämään vuoronsa. Kun pelaaja tai tietokone pääsee eroon korteistaan peli loppuu (voitto/häviö) ja voit valita haluatko pelata uuden pelin. Voit sulkea sovelluksen milloin tahansa painamalla yläkulman ruksia.
+Valitse pelattava kortti (numero tai väri on sama kuin poistopakan ylin kortti) liikkumalla WASD tai nuolinäppäimillä ja valitse kortti painamalla ENTER. Jos sinulla ei ole pelattavaa korttia niin paina SPACE ja saat kortin lisää. Peliin on lisätty värillisiä erikoiskortteja, kuten ohitus ja suunnanvaihto, nosta 2, villi-kortti, villi nosta 4. Kun pelaaja tai tietokone pääsee eroon korteistaan peli loppuu (voitto/häviö) ja voit valita haluatko pelata uuden pelin. Voit sulkea sovelluksen milloin tahansa painamalla yläkulman ruksia.
 
 ## Testaus
 

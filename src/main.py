@@ -4,8 +4,8 @@ from renderer import GameRenderer
 
 def main():
     """Initializes and runs the game."""
-    renderer = GameRenderer(restart_callback=main)
-    game = Game(renderer)
+    renderer = GameRenderer()
+    game = Game(renderer, restart_callback=main)
     game.run()
 
 

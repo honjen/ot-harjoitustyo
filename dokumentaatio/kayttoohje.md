@@ -1,14 +1,48 @@
 # Korttipelin käyttöohjeet
 
-Sovellus on digitaalinen tekstipohjainen versio korttipelistä, jossa pelaajat pyrkivät pääsemään eroon korteistaan noudattaen pelin sääntöjä. Kortteja voi pelata, jos ne vastaavat värin tai numeron (0-9) perusteella pöydällä olevaa korttia tai ovat villejä kortteja. Pelissä on myös erikoiskortteja, jotka vaikuttavat pelin kulkuun. Sovellus tarjoaa yksinpelin tekoälyvastustajaa vastaan.
+Sovellus on digitaalinen versio korttipelistä, jossa pelaajat pyrkivät pääsemään eroon korteistaan noudattaen pelin sääntöjä. Kortteja voi pelata, jos ne vastaavat värin tai numeron (0-9) perusteella pöydällä olevaa korttia. Pelissä on myös erikoiskortteja, jotka vaikuttavat pelin kulkuun. Sovellus tarjoaa yksinpelin tekoälyvastustajaa vastaan.
 
-## Pelaaminen
+## Ohjelman käynnistäminen
+
+1. Ennen ohjelman käynnistämistä, asenna riippuvuudet:
+
+```
+poetry install
+```
+
+2. Alusta tietokanta:
+
+```
+poetry run invoke build
+```
+
+3. Käynnistä ohjelma:
+
+```
+poetry run invoke start
+```
+
+## Päävalikko
 
 ![](./kuvat/peli1.png)
 
-Kuva on miltä peli näyttää kun pelin käynnistää. Ruudulla ylävasemmalla on tieto siitä kenen vuoro on, montako korttia kullakin pelaajalla on, mikä poistopakan ylin kortti on ja näiden tietojen alla näkyy pelaajan kortit, joilla on jokaisella oma kirjain kortin nimen edessä. 
+Kuva on miltä peli näyttää kun pelin käynnistää. Voit valita YLÖS / W ja ALAS / S näppäimillä ja ENTER näppäimellä valikosta haluatko aloittaa pelin, katsoa rankingin, katsoa pelin ohjeet tai poistua. 
 
-- Valitse pelattava kortti (joko numero tai väri on sama kuin poistopakan ylin kortti tai kortti on villi-kortti) painamalla kortin kirjaimen (a-z) nappia. 
+## Pelaaminen
+
+### Pika-ohjeet
+    - SPACE nosta kortti
+    - WASD / suuntanäppäimet + ENTER liiku ja valitse pelattava kortti, väri yms.
+    - ESC Muualla kuin pelissä palaa päävalikkoon
+    - Yläkulman ruksia painamalla voit sulkea pelin 
+
+### Tarkemmat ohjeet
+
+![](./kuvat/peli2.png)
+
+Kuva on miltä peli näyttää kun pelin aloittaa. Ruudulla ylävasemmalla on tieto siitä kenen vuoro on, montako korttia kullakin pelaajalla on, mikä poistopakan ylin kortti on ja näiden tietojen alla näkyy pelaajan kortit.
+
+- Valitse pelattava kortti (joko numero tai väri on sama kuin poistopakan ylin kortti tai kortti on villi-kortti) selaamalla kortteja WASD/suuntanäppäimillä ja valitsemalla kortti ENTER näppäimellä.
 
 - Erikoiskortit, jotka vaikuttavat pelin kulkuun:
     - Pelaamalla värillisiä ohitus- ja suunnanvaihto-kortteja pelaaja saa vastustajan menettämään vuoronsa. 
@@ -16,13 +50,13 @@ Kuva on miltä peli näyttää kun pelin käynnistää. Ruudulla ylävasemmalla 
     - Pelaamalla villin kortin pelaaja voi valita seuraavaksi pelattavan kortin värin.
     - Pelaamalla villin nosta 4 kortin pelaaja voi valita seuraavaksi pelattavan kortin värin sekä laittaa vastustajan nostamaan 4 korttia ja menettämään vuoronsa.
 
-- Jos sinulla ei ole pelattavaa korttia niin paina enter ja saat yhden kortin lisää ja vuoro vaihtuu. 
+- Jos sinulla ei ole pelattavaa korttia niin paina ENTER ja saat yhden kortin lisää ja vuoro vaihtuu. 
 
-![](./kuvat/peli2.png)
+- Kun pelaaja tai tietokone on pelannut vuoronsa ruudulla näkyy korttien määrän vieressä mitä kukin pelaaja viimeksi teki.
 
-Kun pelaaja tai tietokone on pelannut vuoronsa ruudulla näkyy korttien määrän vieressä mitä kukin pelaaja viimeksi teki, kuten yläpuolella olevassa kuvassa näkyy. 
+- Kun pelaaja tai tietokone pääsee eroon korteistaan peli loppuu (voitto/häviö), näet voittajan saamat pisteet ja voit valita haluatko palata päävalikkoon vai sammuttaa pelin.
 
-- Kun pelaaja tai tietokone pääsee eroon korteistaan peli loppuu (voitto/häviö) ja voit valita haluatko pelata uuden pelin vai lopettaa.
+- Jos kortteja nostaa enemmän kuin 30 eri rivejä kortteja voi selata YLÖS ja ALAS näppäimillä.
 
 - Jos pakasta nostetaan kaikki kortit tulee tasapeli.
 

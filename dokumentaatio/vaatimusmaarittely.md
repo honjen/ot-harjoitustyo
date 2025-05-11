@@ -9,24 +9,24 @@ Sovellus on digitaalinen versio korttipelistä, jossa pelaajat pyrkivät pääse
 
 ### Pelin kulku yleisesti
 
-- Aloittaessa uuden pelin pelaajalle ja tekoälylle jaetaan korttipakasta aloituskäsi
+- Aloittaessa uuden pelin pelaajalle ja tekoälylle jaetaan korttipakasta aloituskäsi (7 korttia)
 - Pelaajat pelaavat vuorotellen kortteja pelin sääntöjen mukaisesti
-  - Pelaaja voi pelata kortin, jos se täsmää värin tai numeron perusteella pöydällä olevaan korttiin
-  - Jos pelaaja ei voi pelata korttia, hän nostaa kortin pakasta
+  - Pelaaja voi pelata kortin, jos se täsmää värin tai numeron perusteella pöydällä olevaan korttiin tai on villi-kortti
+  - Pelaaja voi halutessaan nostaa kortin pakasta ja vuoro vaihtuu
 - Erkoiskortit vaikuttavat pelin kulkuun:
   - Ohituskortti: vuoro siirtyy seuraavalle pelaajalle (kaksinpelissä kortin pelannut pelaaja saa toisen vuoron)
   - Suunnanvaihto: pelin suunta vaihtuu (toimii kuten ohituskortti kaksinpelissä)
   - Nosta kaksi: vastustaja nostaa kaksi korttia ja menettää vuoronsa
   - Nosta neljä: vastustaja nostaa 4 korttia, menettää vuoronsa ja kortin pelannut pelaaja valitsee minkä värinen kortti pitää pelata seuraavaksi
   - Villi kortti: pelaaja valitsee minkä värinen kortti pitää pelata seuraavaksi
-- Pelaajan tulee kirjoittaa "yksi" tai painaa tiettyä nappia ennen kuin pelaa toiseksi viimeisen korttinsa tai joutuu nostamaan pakasta neljä korttia
-- Peli päättyy, kun jompikumpi pelaaja pääsee eroon kaikista korteistaan
+- Peli päättyy voittoon tai häviöön, kun jompikumpi pelaaja pääsee eroon kaikista korteistaan
+- Peli päättyy tasapeliin, jos nostopakasta loppuvat kortit
 - Voittaja saa pisteitä vastustajan korteista
 - Pelaaja voi aloittaa uuden pelin
 
 ## Tällä hetkellä valmiit toiminnallisuudet
 - [x] Pelaajat pelaavat vuorotellen kortteja pelin sääntöjen mukaisesti
-  - [x] Pelaaja voi pelata kortin, jos se täsmää värin tai numeron perusteella pöydällä olevaan korttiin
+  - [x] Pelaaja voi pelata kortin, jos se täsmää värin tai numeron perusteella pöydällä olevaan korttiin tai on villi-kortti
   - [x] Pelaaja voi nostaa kortin pakasta
 - [x] Poistopakan kortit sekoitetaan tarvittaessa ja lisätään nostopakkaan
 - [x] Peli päättyy, kun jompikumpi pelaaja pääsee eroon kaikista korteistaan (voitto/häviö)
@@ -36,13 +36,10 @@ Sovellus on digitaalinen versio korttipelistä, jossa pelaajat pyrkivät pääse
 - [x] Pelaaja voi pelata villi-kortin ja valita seuraavaksi pelattavan kortin värin
 - [x] Pelaaja voi pelata villi nosta 4-kortin ja valita seuraavaksi pelattavan kortin värin sekä saada vastustajansa nostamaan 4 korttia ja menettämään vuoronsa
 - [x] Peli päättyy, jos kaikki kortit nostetaan pakasta (tasapeli)
-
-## Seuraavaksi lisättävät toiminnallisuudet
-- [ ] Grafiikat korteille
-- [ ] Pisteiden lasku, high score ranking
-
-## Tunnetut ongelmat, korjaus tulee pian
-- Kun tietokone pelaa villi nosta 4-kortin se ei saa uutta vuoroa, mutta se ei vaikuta muuten pelaamiseen
+- [x] Peliin on lisätty grafiikoita esim. kortteja tekstin sijaan
+- [x] Jos pelaaja nostaa kortteja yli 30 niin niitä voi selata nuolinäppäimillä
+- [x] Pelaajalle lasketaan pisteitä voiton jälkeen ja ne tallennetaan top 10 rankingiin
+- [x] Pelin aloitusvalikosta pelaaja voi valita haluaako aloittaa pelin, lukea ohjeet, katsoa rankingia tai poistua
 
 ## Jatkokehitysideoita
 

@@ -41,3 +41,15 @@
 - Testattu, että villiä korttia ei voi nostaa aloituskortiksi
 - Testattu, että jos ei ole kortteja mitä nostaa palautuu None
 - Testattu, että osa erikoiskorteista toimii
+
+## Viikko 7
+- Käyttäjä voi päävalikon kautta aloittaa pelin, katsoa ohjeet, katsoa rankingeja tai poistua
+- Käyttäjällä on kivempi pelata nyt kun pelissä on kivoja grafiikoita kuten kortteja  
+- Käyttäjä voi selata kortteja WASD näppäimillä ja valita kortin ENTER näppäimellä
+- Käyttäjän saamat pisteet tallettuvat tietokantaan
+- Käyttäjä voi katsoa parhaimmat pisteet high score sivulta
+- Testattu, että tasapelitilanteessa näytetään oikea viesti
+- Testattu, että erikoiskortti "nosta 2" ja "villi nosta 4" toimivat AI:lla
+- Testattu, että pelaaja voi pelata kelvollisen kortin onnistuneesti
+- Testattu, että pisteiden laskeminen erikoiskorteille toimii oikein
+- Testattu, että AI nostaa kortin, jos sillä ei ole pelattavaa korttia
